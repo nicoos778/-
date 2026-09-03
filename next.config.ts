@@ -1,5 +1,15 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {};
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+const basePath = isGitHubPages ? '/-' : '';
+
+const nextConfig: NextConfig = {
+  ...(isGitHubPages ? { output: 'export', trailingSlash: true } : {}),
+  basePath,
+  assetPrefix: basePath || undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
+};
 
 export default nextConfig;

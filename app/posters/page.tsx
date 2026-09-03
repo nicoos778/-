@@ -1,11 +1,11 @@
 import PosterVisual from '../PosterVisual';
-import { posterGroups, posters } from '../posters';
+import { basePath, posterGroups, posters } from '../posters';
 
 export default function PostersPage() {
   return (
     <main className="poster-page">
       <header className="poster-page-header">
-        <a href="/#works">← 返回作品</a>
+        <a href={`${basePath}/#works`}>← 返回作品</a>
         <strong>许启征</strong>
         <span>全部作品 · {posters.length}</span>
       </header>

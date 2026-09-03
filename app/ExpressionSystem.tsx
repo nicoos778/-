@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { basePath } from './posters';
 
 const expressions = [
   { name: '开心', col: 0, row: 0 },
@@ -17,7 +18,7 @@ function Crop({ col, row, alt = '' }: { col: number; row: number; alt?: string }
   return (
     <span className="expression-crop">
       <img
-        src="/works/ip/3d-emotions.png"
+        src={`${basePath}/works/ip/3d-emotions.png`}
         alt={alt}
         style={{ left: `-${col * 100}%`, top: `-${row * 100}%` }}
       />

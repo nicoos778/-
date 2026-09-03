@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import PosterVisual from './PosterVisual';
-import { travelPosters, xiangchaPosters } from './posters';
+import { basePath, travelPosters, xiangchaPosters } from './posters';
 
 const orbitPosters = [
   xiangchaPosters[1],
@@ -40,7 +40,7 @@ export default function FeaturedOrbit() {
   }
 
   function selectPoster(index: number) {
-    if (index === selected) window.location.assign('/posters');
+    if (index === selected) window.location.assign(`${basePath}/posters/`);
     else setSelected(index);
   }
 

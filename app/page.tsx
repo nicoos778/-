@@ -1,6 +1,7 @@
 import CursorTrail from './CursorTrail';
 import ServicesSection from './ServicesSection';
 import ContactButtons from './ContactButtons';
+import { basePath } from './posters';
 import FeaturedOrbit from './FeaturedOrbit';
 import ExpressionSystem from './ExpressionSystem';
 
@@ -30,7 +31,7 @@ export default function Home() {
     <main>
       <aside className="sidebar">
         <a className="identity" href="#top">
-          <img src="/xuqizheng.jpg" alt="许启征" />
+          <img src={`${basePath}/xuqizheng.jpg`} alt="许启征" />
           <strong>许启征</strong>
         </a>
 
@@ -59,7 +60,7 @@ export default function Home() {
 
         <section className="about-section" id="about">
           <div className="about-card">
-            <img src="/xuqizheng.jpg" alt="许启征的个人照片" />
+            <img src={`${basePath}/xuqizheng.jpg`} alt="许启征的个人照片" />
             <div>
               <h2>关于我</h2>
               <div className="personal-info">
@@ -115,35 +116,35 @@ export default function Home() {
             </div>
           </header>
           <figure className="ip-hero-art">
-            <img src="/works/ip/04.png" alt="情绪仔个人IP视觉延展" loading="lazy" />
+            <img src={`${basePath}/works/ip/04.png`} alt="情绪仔个人IP视觉延展" loading="lazy" />
           </figure>
           <div className="ip-process">
-            <figure><img src="/works/ip/01.png" alt="情绪仔角色概念介绍" loading="lazy" /><figcaption><span>01</span>角色概念</figcaption></figure>
-            <figure><img src="/works/ip/02.png" alt="情绪仔三视图与配色" loading="lazy" /><figcaption><span>02</span>角色设定</figcaption></figure>
-            <figure><img src="/works/ip/03.png" alt="情绪仔表情与形象延展" loading="lazy" /><figcaption><span>03</span>形象延展</figcaption></figure>
+            <figure><img src={`${basePath}/works/ip/01.png`} alt="情绪仔角色概念介绍" loading="lazy" /><figcaption><span>01</span>角色概念</figcaption></figure>
+            <figure><img src={`${basePath}/works/ip/02.png`} alt="情绪仔三视图与配色" loading="lazy" /><figcaption><span>02</span>角色设定</figcaption></figure>
+            <figure><img src={`${basePath}/works/ip/03.png`} alt="情绪仔表情与形象延展" loading="lazy" /><figcaption><span>03</span>形象延展</figcaption></figure>
           </div>
           <div className="ip-3d-intro">
             <div className="ip-3d-side">
               <span>3D EXTENSION</span>
               <div className="ip-mascot" aria-label="趴着托下巴并眨眼的情绪仔">
-                <img className="ip-mascot-open" src="/works/ip/mascot-chin-open-v3-white.png" alt="" />
-                <img className="ip-mascot-closed" src="/works/ip/mascot-chin-closed-v3-white.png" alt="" />
+                <img className="ip-mascot-open" src={`${basePath}/works/ip/mascot-chin-open-v3-white.png`} alt="" />
+                <img className="ip-mascot-closed" src={`${basePath}/works/ip/mascot-chin-closed-v3-white.png`} alt="" />
               </div>
             </div>
             <div><h3>从平面角色，<br />走进真实世界。</h3><p>将原有角色语言转化为软胶玩具质感，并继续延展动作、表情和可落地的实物物料。</p></div>
           </div>
           <div className="ip-3d-gallery">
             <figure className="ip-3d-card ip-3d-card-actions">
-              <img src="/works/ip/3d-actions.png" alt="情绪仔五种3D动作造型" loading="lazy" />
+              <img src={`${basePath}/works/ip/3d-actions.png`} alt="情绪仔五种3D动作造型" loading="lazy" />
               <figcaption><span>01 · 动作系统</span><strong>站立、挥手、奔跑、跳跃、坐姿</strong></figcaption>
             </figure>
             <ExpressionSystem />
             <figure className="ip-3d-card ip-3d-card-merch">
-              <img src="/works/ip/3d-merch.png" alt="情绪仔实物物料设计" loading="lazy" />
+              <img src={`${basePath}/works/ip/3d-merch.png`} alt="情绪仔实物物料设计" loading="lazy" />
               <figcaption><span>03 · 实物物料</span><strong>手办、盲盒、徽章、钥匙扣与生活用品</strong></figcaption>
             </figure>
           </div>
-          <a className="ip-more" href="/posters#group-个人IP">查看完整项目 <span>↗</span></a>
+          <a className="ip-more" href={`${basePath}/posters/#group-个人IP`}>查看完整项目 <span>↗</span></a>
         </section>
 
         <ServicesSection />
