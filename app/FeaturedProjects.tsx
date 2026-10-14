@@ -1,6 +1,7 @@
 import { basePath } from './posters';
 import { campaignCases, campaignOrder } from './campaigns';
 import TravelShowcase from './TravelShowcase';
+import RealEstateShowcase from './RealEstateShowcase';
 
 const campaignShots = [
   { src: '01-preheat.jpg', step: '01', label: '活动预热' },
@@ -68,6 +69,7 @@ export default function FeaturedProjects() {
       </div>
 
       <TravelShowcase />
+      <RealEstateShowcase />
     </section>
   );
 }
