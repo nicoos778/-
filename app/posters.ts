@@ -1,6 +1,6 @@
 export type PosterItem = {
   id: string;
-  category: '健康产品营销' | '年中活动' | '月末回馈' | '五一活动' | '开春福利' | '湘茶' | '旅游' | '个人IP';
+  category: '健康产品营销' | '年中活动' | '月末回馈' | '五一活动' | '开春福利' | '湘茶' | '文旅视觉' | '个人IP';
   src: string;
   width: number;
   height: number;
@@ -60,16 +60,22 @@ export const xiangchaPosters: PosterItem[] = [
 ];
 
 export const travelPosters: PosterItem[] = [
-  { id: 'travel-01', category: '旅游', src: asset('/works/travel/01.jpg'), width: 1080, height: 3058 },
-  { id: 'travel-02', category: '旅游', src: asset('/works/travel/02.jpg'), width: 1636, height: 2932 },
-  { id: 'travel-03', category: '旅游', src: asset('/works/travel/03.jpg'), width: 1080, height: 2371 },
-  { id: 'travel-04', category: '旅游', src: asset('/works/travel/04.jpg'), width: 1280, height: 2786 },
-  { id: 'travel-05', category: '旅游', src: asset('/works/travel/05.jpg'), width: 1080, height: 2258 },
-  { id: 'travel-06', category: '旅游', src: asset('/works/travel/06.jpg'), width: 2524, height: 7521 },
-  { id: 'travel-07', category: '旅游', src: asset('/works/travel/07.jpg'), width: 1063, height: 2569 },
-  { id: 'travel-08', category: '旅游', src: asset('/works/travel/08.jpg'), width: 959, height: 1976 },
-  { id: 'travel-09', category: '旅游', src: asset('/works/travel/09.jpg'), width: 1080, height: 3998 },
-  { id: 'travel-10', category: '旅游', src: asset('/works/travel/10.jpg'), width: 800, height: 2000 },
+  { id: 'travel-01', category: '文旅视觉', src: asset('/works/travel-series/01-dragon-boat.webp'), width: 941, height: 1803 },
+  { id: 'travel-02', category: '文旅视觉', src: asset('/works/travel-series/02-national-day.webp'), width: 750, height: 2583 },
+  { id: 'travel-03', category: '文旅视觉', src: asset('/works/travel-series/03-dalian.webp'), width: 1080, height: 2025 },
+  { id: 'travel-04', category: '文旅视觉', src: asset('/works/travel-series/04-qinghai.webp'), width: 1080, height: 2822 },
+  { id: 'travel-05', category: '文旅视觉', src: asset('/works/travel-series/05-xian.webp'), width: 959, height: 1976 },
+  { id: 'travel-06', category: '文旅视觉', src: asset('/works/travel-series/06-northwest.webp'), width: 1080, height: 3998 },
+  { id: 'travel-07', category: '文旅视觉', src: asset('/works/travel-series/07-northwest-detail.webp'), width: 1600, height: 4640 },
+  { id: 'travel-08', category: '文旅视觉', src: asset('/works/travel-series/08-populus.webp'), width: 1600, height: 3436 },
+  { id: 'travel-09', category: '文旅视觉', src: asset('/works/travel-series/09-northwest-daily.webp'), width: 1600, height: 4816 },
+  { id: 'travel-10', category: '文旅视觉', src: asset('/works/travel-series/10-northwest-thanks.webp'), width: 1600, height: 5174 },
+  { id: 'travel-11', category: '文旅视觉', src: asset('/works/travel-series/11-sanya-detail.webp'), width: 794, height: 6191 },
+  { id: 'travel-12', category: '文旅视觉', src: asset('/works/travel-series/12-new-year.webp'), width: 1125, height: 2408 },
+  { id: 'travel-13', category: '文旅视觉', src: asset('/works/travel-series/13-tibet.webp'), width: 1080, height: 2258 },
+  { id: 'travel-14', category: '文旅视觉', src: asset('/works/travel-series/14-snow.webp'), width: 1080, height: 7232 },
+  { id: 'travel-15', category: '文旅视觉', src: asset('/works/travel-series/15-snow-detail.webp'), width: 1242, height: 3137 },
+  { id: 'travel-16', category: '文旅视觉', src: asset('/works/travel-series/16-northwest-summer.webp'), width: 1200, height: 3064 },
 ];
 
 export const ipPosters: PosterItem[] = [
@@ -100,6 +106,6 @@ export const posterGroups = [
   { title: '五一活动', slug: 'labor-day', items: laborDayPosters },
   { title: '开春福利', slug: 'spring', items: springPosters },
   { title: '湘茶', slug: 'xiangcha', items: xiangchaPosters },
-  { title: '旅游', slug: 'travel', items: travelPosters },
+  { title: '文旅视觉', slug: 'travel', items: travelPosters },
   { title: '个人IP', slug: 'ip', items: ipPosters },
 ];

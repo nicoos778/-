@@ -1,5 +1,6 @@
 import { basePath } from './posters';
 import { campaignCases, campaignOrder } from './campaigns';
+import TravelShowcase from './TravelShowcase';
 
 const campaignShots = [
   { src: '01-preheat.jpg', step: '01', label: '活动预热' },
@@ -66,16 +67,7 @@ export default function FeaturedProjects() {
         </div>
       </div>
 
-      <div className="featured-more">
-        <a className="featured-secondary" href={`${basePath}/posters/#group-旅游`}>
-          <figure><img src={`${basePath}/works/travel/04.jpg`} alt="文旅活动视觉设计" loading="lazy" /></figure>
-          <div><span>02 · 文旅内容</span><h3>文旅视觉</h3><strong>查看系列 ↗</strong></div>
-        </a>
-        <a className="featured-secondary" href={`${basePath}/#personal-ip`}>
-          <figure><img src={`${basePath}/works/ip/04.png`} alt="情绪仔个人IP设计" loading="lazy" /></figure>
-          <div><span>03 · 角色设计</span><h3>情绪仔 IP</h3><strong>查看项目 ↓</strong></div>
-        </a>
-      </div>
+      <TravelShowcase />
     </section>
   );
 }
