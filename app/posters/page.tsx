@@ -22,7 +22,7 @@ export default function PostersPage() {
           <div className="poster-wall">
             {group.items.map((poster, index) => (
               <article className="poster-item" key={poster.id}>
-                <PosterVisual {...poster} eager={group.title === '湘茶' && index < 3} />
+                <PosterVisual {...poster} eager={group.title === '健康产品营销' && index < 3} />
               </article>
             ))}
           </div>

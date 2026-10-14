@@ -2,7 +2,7 @@ import CursorTrail from './CursorTrail';
 import ServicesSection from './ServicesSection';
 import ContactButtons from './ContactButtons';
 import { basePath } from './posters';
-import FeaturedOrbit from './FeaturedOrbit';
+import FeaturedProjects from './FeaturedProjects';
 import ExpressionSystem from './ExpressionSystem';
 
 const experience = [
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </section>
 
-        <FeaturedOrbit />
+        <FeaturedProjects />
 
         <section className="ip-showcase" id="personal-ip">
           <header className="ip-heading">
