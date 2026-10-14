@@ -28,6 +28,9 @@ def main() -> None:
 
         with Image.open(source) as image:
             image = image.convert("RGB")
+            # Remove the portfolio-template header (including the embedded year)
+            # while preserving the original files on the desktop.
+            image = image.crop((0, 760, image.width, image.height))
             if image.width > 2000:
                 height = round(image.height * 2000 / image.width)
                 image = image.resize((2000, height), Image.Resampling.LANCZOS)
