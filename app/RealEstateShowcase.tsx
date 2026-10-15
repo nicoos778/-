@@ -16,7 +16,7 @@ const boards = [
   '品质住宅',
 ];
 
-const boardSrc = (index: number) => `${basePath}/works/real-estate/${String(index + 1).padStart(2, '0')}.webp?v=2`;
+const boardSrc = (index: number) => `${basePath}/works/real-estate/${String(index + 1).padStart(2, '0')}.webp?v=3`;
 
 export default function RealEstateShowcase() {
   const [selected, setSelected] = useState<number | null>(null);

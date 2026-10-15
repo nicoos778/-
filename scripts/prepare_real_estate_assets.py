@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 SOURCE_DIR = Path(r"C:\Users\Administrator\Desktop\2022")
@@ -31,6 +31,8 @@ def main() -> None:
             # Remove the portfolio-template header (including the embedded year)
             # while preserving the original files on the desktop.
             image = image.crop((0, 760, image.width, image.height))
+            # Restore balanced breathing room around the cropped artwork.
+            image = ImageOps.expand(image, border=(0, 170, 0, 50), fill="white")
             if image.width > 2000:
                 height = round(image.height * 2000 / image.width)
                 image = image.resize((2000, height), Image.Resampling.LANCZOS)
